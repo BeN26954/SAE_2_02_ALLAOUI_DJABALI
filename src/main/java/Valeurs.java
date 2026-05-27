@@ -1,5 +1,8 @@
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class Valeurs {
 
@@ -35,5 +38,17 @@ public class Valeurs {
             res += s + " ->  V:" + valeurNoeud + " p:" + noeudParent + "\n";
         }
         return res;
+    }
+    public List<String> calculerChemin(String destination) {
+        List<String> chemin = new ArrayList<>();
+        String noeudActuel = destination;
+
+        while (noeudActuel != null) {
+            chemin.add(noeudActuel);
+            noeudActuel = this.getParent(noeudActuel);
+        }
+
+        Collections.reverse(chemin);
+        return chemin;
     }
 }
