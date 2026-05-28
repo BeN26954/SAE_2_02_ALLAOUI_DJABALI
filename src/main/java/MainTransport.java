@@ -3,7 +3,7 @@ import java.util.List;
 public class MainTransport {
     public static void main(String[] args) {
         if (args.length != 2) {
-            System.err.println("Erreur: usage java MainTransport <STATION_DEPART> <STATION_ARRIVEE>");
+            System.err.println("Erreur: MainTransport <STATION_DEPART> <STATION_ARRIVEE>");
             System.exit(1);
         }
 
