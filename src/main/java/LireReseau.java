@@ -3,7 +3,6 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class LireReseau {
-
     public static Graphe lire(String fichier_stations, String fichier_connexions) {
         GrapheListe g = new GrapheListe();
 
